@@ -1,0 +1,50 @@
+#include<conio.h>
+#include<stdio.h>
+
+//argument with return value
+int add1(int x,int y)
+{
+	int z = x + y;
+	return z;
+}
+
+//argument with no return value
+void add2(int x,int y)
+{
+	int z = x + y;
+	printf("\nadd2 = %d",z);
+}
+
+//no argument with return value
+int add3()
+{
+	int x=15,y=10,z;
+	z = x + y;
+	return z;
+}
+
+//no argument with no return value
+void add4()
+{
+	int x=15,y=10,z;
+	z = x + y;
+	printf("\nadd4 = %d",z);
+}
+
+void main()
+{
+	long int a=15,b=10,c;
+	clrscr();
+
+		c = add1(a,b);
+		printf("\nadd1 = %ld",c);
+
+		add2(a,b);
+
+		c = add3();
+		printf("\nadd3 = %ld",c);
+
+		add4();
+
+	getch();
+}
